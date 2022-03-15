@@ -363,36 +363,7 @@ h3{
   }
 
 
-/* GRIDS por AREAS */
-#gridAreas {
-    display: grid;
-    /* estructura */
-    grid-template-areas: 
-    "cabeza cabeza cabeza"/* fila 1 */
-    "productos productos brazo"/* fila 2 */
-    "servicio servicios brazo"/* fila 3 */
-    "pie pie pie"/* fila 4 */
-    ;
-    grid-template-columns: 15% auto 25%;/* columnas */
-    grid-template-rows: 100px 1fr 1fr 75px; /* filas */
-    grid-column-gap: 5px;/* margen de columnas */
-    grid-row-gap: 5px;/* margen de fila */
-}
 
-/* Flex */
-.flexMenu {
-    display: flex;
-    flex-direction: column;
-}
-.productosFlex {
-    display: flex;
-    justify-content: center;
-}
-.flexfooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
 
 
