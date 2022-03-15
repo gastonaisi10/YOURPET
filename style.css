@@ -1,0 +1,412 @@
+
+/* PALETA DE COLORES
+--imperial-red: #e63946ff;
+--honeydew: #f1faeeff;
+--powder-blue: #a8dadcff;
+--celadon-blue: #457b9dff;
+--prussian-blue: #1d3557ff;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'RUSSO', sans-serif;
+}
+
+/* vista mobile */
+
+@media only screen and (max-width: 767px){
+
+.border {
+    border: solid 2px #000;
+    background-color: #f1faeeff;
+    text-align: center;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    color: #34495e;
+}
+
+
+span {
+    background-color: #457b9dff;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+span:hover {
+    background-color: #34495e;
+    color: azure;
+}
+article {
+    background-color: #fff;
+    border-radius: 0px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+}
+
+h1{
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+@font-face {
+    font-family: 'Russo';
+    src: url("./views/Russo/RussoOne-Regular.ttf");
+}
+
+
+
+.font{
+    font-size: 10px;
+}
+
+
+.rectangulo{
+	width: 200px;
+	text-align: left;
+    font-size: 0%;
+	transition: all 3s;
+}
+
+.rectangulo:hover{
+	width: 100%;
+	height: auto;
+	color: black;
+	text-align: center;
+    font-size: 100%;
+	padding: 10px;
+}
+
+}
+
+
+/* GRIDS por AREAS */
+#gridAreas {
+    display: grid;
+    /* estructura */
+    grid-template-areas: 
+    "menu cabeza "/* fila 1 */
+    "menu productos"/* fila 2 */
+    "menu servicios"/* fila 3 */
+    "menu brazo"
+    "menu pie"/* fila 4 */
+    ;
+    grid-template-columns: 30% 70%; /* columnas */
+    grid-template-rows: 100px 1fr 450px 450px 50px; /* filas */
+    grid-column-gap: 3px;/* margen de columnas */
+    grid-row-gap: 10px;/* margen de fila */
+}
+/* Nombrar cada Area */
+header {
+    grid-area: cabeza;
+    padding: 0px;
+ }
+ footer {
+    grid-area: pie;
+    padding: 10px;
+ }
+ #productos {
+    grid-area: productos;   
+    padding: 20px;  
+ }
+#servicios {
+    grid-area: servicios;  
+    padding: 10px;   
+ }
+ nav {
+    grid-area: menu;
+    padding: 10px;
+ }
+
+ aside {
+    grid-area: brazo;
+    padding: 10px;
+ }
+ 
+ 
+/* Flex */
+.flexMenu {
+    display: flex;
+    flex-direction: column;
+}
+.productosFlex {
+    display: flex;
+    justify-content: center;
+}
+.flexfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/* PARA TABLET */
+
+@media (min-width: 480px) and (max-width: 1023px) {
+
+
+    .border {
+        border: solid 2px #000;
+        background: #E0EAFC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        text-align: center;}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #34495e;
+}
+span {
+    background-color: #457b9dff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+span:hover {
+    background-color: #34495e;
+    color: azure;
+}
+article {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+}
+
+h1{
+ padding: 10px;
+ margin-top: 10px;
+}
+
+.font{
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* GRIDS por AREAS */
+#gridAreas {
+    display: grid;
+    /* estructura */
+    grid-template-areas: 
+    "menu cabeza cabeza"/* fila 1 */
+    "menu productos brazo"/* fila 2 */
+    "menu servicios brazo"/* fila 3 */
+    "menu pie pie"/* fila 4 */
+    ;
+    grid-template-columns: 15% auto 25%;/* columnas */
+    grid-template-rows: 100px 1fr 1fr 75px; /* filas */
+    grid-column-gap: 5px;/* margen de columnas */
+    grid-row-gap: 5px;/* margen de fila */
+}
+/* Nombrar cada Area */
+header {
+    grid-area: cabeza;
+    padding: 10px;
+ }
+ footer {
+    grid-area: pie;
+    padding: 10px;
+ }
+ #productos {
+    grid-area: productos;   
+    padding: 20px;  
+ }
+#servicios {
+    grid-area: servicios;  
+    padding: 10px;   
+ }
+ nav {
+    grid-area: menu;
+    padding: 10px;
+ }
+ aside {
+    grid-area: brazo;
+    padding: 10px;
+ }
+ 
+/* Flex */
+.flexMenu {
+    display: flex;
+    flex-direction: column;
+}
+.productosFlex {
+    display: flex;
+    justify-content: center;
+}
+.flexfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+@font-face {
+    font-family: 'Russo';
+    src: url("./views/Russo/RussoOne-Regular.ttf");
+}
+
+
+
+.rectangulo{
+	width: 200px;
+	text-align: left;
+    font-size: 0%;
+	transition: all 3s;
+}
+
+.rectangulo:hover{
+	width: 100%;
+	height: auto;
+	color: black;
+	text-align: center;
+    font-size: 100%;
+	padding: 10px;
+}
+
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+
+.border {
+    border: solid 2px #000;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+}
+body {
+    width: 100%;
+    height: 100%;
+    color: #34495e;
+}
+span {
+    background-color: #4CA1AF;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+}
+span:hover {
+    background-color: #34495e;
+    color: azure;
+}
+article {
+    background-color: #fff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0px;
+}
+
+h1{
+ padding: 10px;
+ margin-top: 10px;
+}
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.font{
+    font-size: 18px;
+}
+
+
+.rectangulo{
+	width: 200px;
+	color: white;
+	text-align: left;
+    font-size: 0%;
+	transition: all 3s;
+}
+
+.rectangulo:hover{
+	width: 100%;
+	height: auto;
+	color: black;
+	text-align: center;
+    font-size: 100%;
+	padding: 10px;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    text-align: center;
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+
+/* GRIDS por AREAS */
+#gridAreas {
+    display: grid;
+    /* estructura */
+    grid-template-areas: 
+    "cabeza cabeza cabeza"/* fila 1 */
+    "productos productos brazo"/* fila 2 */
+    "servicio servicios brazo"/* fila 3 */
+    "pie pie pie"/* fila 4 */
+    ;
+    grid-template-columns: 15% auto 25%;/* columnas */
+    grid-template-rows: 100px 1fr 1fr 75px; /* filas */
+    grid-column-gap: 5px;/* margen de columnas */
+    grid-row-gap: 5px;/* margen de fila */
+}
+
+/* Flex */
+.flexMenu {
+    display: flex;
+    flex-direction: column;
+}
+.productosFlex {
+    display: flex;
+    justify-content: center;
+}
+.flexfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+@font-face {
+    font-family: 'Russo';
+    src: url("./views/Russo/RussoOne-Regular.ttf");
+}
+
+
+.animate__animated.animate__backInUp{
+    --animate-delay: 2s;
+  }
+
+}
+
+

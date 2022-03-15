@@ -1,0 +1,7 @@
+# Ignora la carpeta node_modules
+node_modules/
+
+# Ignora archivos json
+*.json
+# Ignora archivos mac
+ .DS_Store
